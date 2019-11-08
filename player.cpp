@@ -10,7 +10,7 @@ Player::Player(){
 
 }
 void Player::addCard(Card c){
-  cout << myName << "draws a" << c << endl;
+  cout << myName << " draws a " << c << endl;
   myHand.push_back(c);
 }
 
@@ -23,11 +23,13 @@ void Player::bookCards(Card c1, Card c2){
 //optional
 // bool Player::checkHandForBook(Card &c1, Card &c2);
 // bool Player::rankInHand(Card c) const;
-//
-// Card Player::chooseCardFromHand() const;
+
+Card Player::chooseCardFromHand() const{
+ return myHand[rand() % myHand.size()];
+}
 
 bool Player::cardInHand(Card c) const{
-  vector<Card>::iterator it = myHand.begin();
+  vector<Card>::const_iterator it = myHand.begin();
   for(it = myHand.begin(); it != myHand.end(); ++it){
     if(*it == c){
       return true;
@@ -47,12 +49,21 @@ Card Player::removeCardFromHand(Card c){
 
 string Player::showHand() const{
   string s;
-  for(int i = 0; i <= myHand.size(); i++){
-    s = s + myHand[i].toString();
+  vector<Card>::const_iterator it = myHand.begin();
+  for(it = myHand.begin(); it != myHand.end(); ++it){
+    s = s + " " + it->toString();
   }
+  return s;
 }
-// string Player::showBooks() const{}
-//
+string Player::showBooks() const{
+  string s;
+  vector<Card>::const_iterator it = myHand.begin();
+  for(it = myBook.begin(); it != myBook.end(); ++it){
+    s = s + " " + it->toString();
+  }
+  return s;
+}
+
 int Player::getHandSize() const{
   return myHand.size();
 }
