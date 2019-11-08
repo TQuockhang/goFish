@@ -40,11 +40,12 @@ bool Player::cardInHand(Card c) const{
 
 Card Player::removeCardFromHand(Card c){
   vector<Card>::iterator it = myHand.begin();
-  for(it = myHand.begin(); *it != c && it != myHand.end(); ++it){
+  for(it = myHand.begin(); it != myHand.end(); ++it){
+    if (*it == c){
+      myHand.erase(it);
+      return c;
+    }
   }
-  myHand.erase(it);
-
-  return c;
 }
 
 string Player::showHand() const{
@@ -74,5 +75,26 @@ int Player::getBookSize() const{
 
 //
 // optional
-// bool Player::checkHandForPair(Card &c1, Card &c2);
-// bool Player::sameRankInHand(Card c) const;
+bool Player::checkHandForPair(Card &c1, Card &c2){
+  vector<Card>::iterator it = myHand.begin();
+  vector<Card>::iterator it2 = myHand.begin();
+  for(it = myHand.begin(); it != myHand.end(); ++it){
+    for(it2 = it + 1; it2 != myHand.end(); ++it2){
+      if (it->getRank() == it2->getRank()){
+        c1 = *it;
+        c2 = *it2;
+        return true;
+      }
+    }
+  }
+  return false;
+}
+bool Player::sameRankInHand(Card c) const{
+  vector<Card>::const_iterator it = myHand.begin();
+  for(it = myHand.begin(); it != myHand.end(); ++it){
+    if(it->getRank() == c.getRank()){
+      return true;
+    }
+  }
+  return false;
+}
