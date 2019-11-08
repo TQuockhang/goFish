@@ -20,25 +20,24 @@ Deck::Deck(){
   }
   myIndex = myIndex - 1;
 
-  
   unsigned int currentTime =  (unsigned)time(0);
   srand(currentTime);
 }
 
 void Deck::shuffle(){   // shuffle the deck, all 52 cards present
-  if(this->size()  <  SINGLECARD){
+  if(this->size() < SINGLECARD){
      return; // nothing to shuffle
   }
   else{
     int temp = myIndex;
-    while(This->size()  > EMPTY){
+    while(temp > EMPTY){
       myCards[temp].swap(myCards[rand()%myIndex]);
       temp--;
     }
   }
 }
 Card Deck::dealCard(){  // get a card, after 52 are dealt, fail
-  if (This->size() > EMPTY){
+  if (this->size() > EMPTY){
     Card temp = myCards[myIndex];
     myIndex--;
     return temp;
