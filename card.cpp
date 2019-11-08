@@ -1,3 +1,5 @@
+//File: card.cpp
+//Written by Quockhang Truong
 #include <iostream>
 #include <string>
 #include "card.h"
@@ -45,7 +47,7 @@ string Card::suitString(Suit s) const{  // return "s", "h",...
 
 
 string Card::rankString(int r)const{      //   // return "A", "2", ..."Q"
-  if(r > 1 || r < 11){
+  if(r > 1 && r < 11){
     return std::to_string(r);
   }
   else{
@@ -74,6 +76,6 @@ bool Card::operator != (const Card& rhs) const{
 }
 
 ostream& operator << (ostream& out, const Card& c){
-   out << c.toString() << endl;
+   out << c.toString();
    return out;
 }
