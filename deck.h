@@ -1,5 +1,5 @@
 // FILE: deck.h
-// written by Owen Astrachan and Roger Priebe
+// written by Owen Astrachan and Roger Priebe and Quockhang Truong
 // this class respresents a deck of cards
 // When a Deck is constructed, it contains 52 cards
 // in a "regular" order (aces, twos, threes, ... , kings)
@@ -22,21 +22,23 @@
 class Deck
 {
   static const int SIZE = 52;
-  
+  static const int EMPTY = 0;
+  static const int SINGLECARD = 1;
+
   public:
-    
-    
+
+
     Deck();           // pristine, sorted deck
 
     void shuffle();   // shuffle the deck, all 52 cards present
-    Card dealCard();   // get a card, after 52 are dealt, fail 
+    Card dealCard();   // get a card, after 52 are dealt, fail
 
     int  size() const; // # cards left in the deck
 
   private:
 
     Card myCards[SIZE];
-    int myIndex;  // current card to deal
+    int myIndex;  // current card to deal by default after the destructor it is set to 52
 };
 
 #endif

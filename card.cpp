@@ -16,7 +16,7 @@ Card::Card(int rank, Suit s){
 }
 
 string Card::toString() const{ // return string version e.g. Ac 4h Js
-  string s = suitString(mySuit) + rankString(myRank);
+  string s = rankString(myRank) + suitString(mySuit);
   return s;
 
 }
@@ -65,6 +65,12 @@ string Card::rankString(int r)const{      //   // return "A", "2", ..."Q"
         break;
     }
   }
+}
+
+void Card::swap(Card& c){
+  Card temp = c;
+  c = *this;
+  *this = temp;
 }
 
 bool Card::operator == (const Card& rhs) const{

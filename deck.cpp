@@ -5,6 +5,8 @@
 #include <string>
 #include "card.h"
 #include "deck.h"
+#include <fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -16,11 +18,32 @@ Deck::Deck(){
       myIndex++;
     }
   }
-  for(int i = 0; i < 52; i++){
-    cout<< myCards[i] << endl;
+  myIndex = myIndex - 1;
+
+  
+  unsigned int currentTime =  (unsigned)time(0);
+  srand(currentTime);
+}
+
+void Deck::shuffle(){   // shuffle the deck, all 52 cards present
+  if(this->size()  <  SINGLECARD){
+     return; // nothing to shuffle
+  }
+  else{
+    int temp = myIndex;
+    while(This->size()  > EMPTY){
+      myCards[temp].swap(myCards[rand()%myIndex]);
+      temp--;
+    }
   }
 }
-int main(){
-  Deck d;
-  return 0;
+Card Deck::dealCard(){  // get a card, after 52 are dealt, fail
+  if (This->size() > EMPTY){
+    Card temp = myCards[myIndex];
+    myIndex--;
+    return temp;
+  }
 }
+ int  Deck::size() const{ // # cards left in the deck
+  return (myIndex + 1);
+ }
