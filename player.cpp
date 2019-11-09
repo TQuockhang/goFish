@@ -15,7 +15,7 @@ void Player::addCard(Card c){
 }
 
 void Player::bookCards(Card c1, Card c2){
-  cout << myName << "books the " << c1.getRank() << endl;
+  cout << myName << " books the " << c1.rankString(c1.getRank()) << endl;
   myBook.push_back(c1);
   myBook.push_back(c2);
 }
@@ -31,7 +31,7 @@ Card Player::chooseCardFromHand() const{
 bool Player::cardInHand(Card c) const{
   vector<Card>::const_iterator it = myHand.begin();
   for(it = myHand.begin(); it != myHand.end(); ++it){
-    if(*it == c){
+    if(it->getRank() == c.getRank()){
       return true;
     }
   }
@@ -41,9 +41,10 @@ bool Player::cardInHand(Card c) const{
 Card Player::removeCardFromHand(Card c){
   vector<Card>::iterator it = myHand.begin();
   for(it = myHand.begin(); it != myHand.end(); ++it){
-    if (*it == c){
+    if (it->getRank() == c.getRank()){
+      Card temp = *it;
       myHand.erase(it);
-      return c;
+      return temp;
     }
   }
 }
