@@ -1,0 +1,201 @@
+Joe has: Qc 10c Qd Kd 4s 5s 9c
+Jane has: Ad 10s 7d 4d 10h 2d Kc
+Joe has: 10c Kd 4s 5s 9c
+Jane has: Ad 7d 4d 2d Kc
+Jane asks - do you have a 4?
+Joe says - yes, here you go!
+Jane books the 4
+Joe has: 10c Kd 5s 9c
+Jane has: Ad 7d 2d Kc
+Jane asks - do you have a 2?
+Joe says - nope. Go Fish!
+Jane books the 7
+Joe has: 10c Kd 5s 9c
+Jane has: Ad 2d Kc
+Jane asks - do you have a 2?
+Joe says - nope. Go Fish!
+Joe has: 10c Kd 5s 9c
+Jane has: Ad 2d Kc 8d
+Joe asks - do you have a 10?
+Jane says - nope. Go Fish!
+Joe books the 9
+Joe has: 10c Kd 5s
+Jane has: Ad 2d Kc 8d
+Joe asks - do you have a 5?
+Jane says - nope. Go Fish!
+Joe books the 5
+Joe has: 10c Kd
+Jane has: Ad 2d Kc 8d
+Joe asks - do you have a K?
+Jane says - yes, here you go!
+Joe books the K
+Joe has: 10c
+Jane has: Ad 2d 8d
+Joe asks - do you have a 10?
+Jane says - nope. Go Fish!
+Jane asks - do you have a 8?
+Joe says - nope. Go Fish!
+Jane books the 2
+Joe has: 10c 6h
+Jane has: Ad 8d
+Jane asks - do you have a 8?
+Joe says - nope. Go Fish!
+Joe has: 10c 6h
+Jane has: Ad 8d Qh
+Joe asks - do you have a 10?
+Jane says - nope. Go Fish!
+Jane asks - do you have a Q?
+Joe says - nope. Go Fish!
+Joe has: 10c 6h Ks
+Jane has: Ad 8d Qh 3h
+Joe asks - do you have a 10?
+Jane says - nope. Go Fish!
+Jane asks - do you have a Q?
+Joe says - nope. Go Fish!
+Joe has: 10c 6h Ks Jh
+Jane has: Ad 8d Qh 3h Js
+Joe asks - do you have a K?
+Jane says - nope. Go Fish!
+Jane asks - do you have a Q?
+Joe says - nope. Go Fish!
+Joe has: 10c 6h Ks Jh 7h
+Jane has: Ad 8d Qh 3h Js 4c
+Joe asks - do you have a 10?
+Jane says - nope. Go Fish!
+Joe books the J
+Joe has: 10c 6h Ks 7h
+Jane has: Ad 8d Qh 3h Js 4c
+Joe asks - do you have a 7?
+Jane says - nope. Go Fish!
+Jane asks - do you have a J?
+Joe says - nope. Go Fish!
+Joe has: 10c 6h Ks 7h 5d
+Jane has: Ad 8d Qh 3h Js 4c 5c
+Joe asks - do you have a K?
+Jane says - nope. Go Fish!
+Jane asks - do you have a 8?
+Joe says - nope. Go Fish!
+Jane books the 3
+Joe has: 10c 6h Ks 7h 5d Ah
+Jane has: Ad 8d Qh Js 4c 5c
+Jane asks - do you have a A?
+Joe says - yes, here you go!
+Jane books the A
+Joe has: 10c 6h Ks 7h 5d
+Jane has: 8d Qh Js 4c 5c
+Jane asks - do you have a 8?
+Joe says - nope. Go Fish!
+Joe has: 10c 6h Ks 7h 5d
+Jane has: 8d Qh Js 4c 5c 3s
+Joe asks - do you have a 5?
+Jane says - yes, here you go!
+Joe books the 5
+Joe has: 10c 6h Ks 7h
+Jane has: 8d Qh Js 4c 3s
+Joe asks - do you have a K?
+Jane says - nope. Go Fish!
+Jane asks - do you have a 4?
+Joe says - nope. Go Fish!
+Joe has: 10c 6h Ks 7h Ac
+Jane has: 8d Qh Js 4c 3s 6d
+Joe asks - do you have a 10?
+Jane says - nope. Go Fish!
+Joe books the 6
+Joe has: 10c Ks 7h Ac
+Jane has: 8d Qh Js 4c 3s 6d
+Joe asks - do you have a K?
+Jane says - nope. Go Fish!
+Joe books the K
+Joe has: 10c 7h Ac
+Jane has: 8d Qh Js 4c 3s 6d
+Joe asks - do you have a A?
+Jane says - nope. Go Fish!
+Jane asks - do you have a Q?
+Joe says - nope. Go Fish!
+Joe has: 10c 7h Ac 9s
+Jane has: 8d Qh Js 4c 3s 6d 7c
+Joe asks - do you have a 10?
+Jane says - nope. Go Fish!
+Jane asks - do you have a 4?
+Joe says - nope. Go Fish!
+Joe has: 10c 7h Ac 9s 2c
+Jane has: 8d Qh Js 4c 3s 6d 7c As
+Joe asks - do you have a 2?
+Jane says - nope. Go Fish!
+Jane asks - do you have a J?
+Joe says - nope. Go Fish!
+Jane books the 8
+Joe has: 10c 7h Ac 9s 2c 6s
+Jane has: Qh Js 4c 3s 6d 7c As
+Jane asks - do you have a J?
+Joe says - nope. Go Fish!
+Jane books the Q
+Joe has: 10c 7h Ac 9s 2c 6s
+Jane has: Js 4c 3s 6d 7c As
+Jane asks - do you have a A?
+Joe says - yes, here you go!
+Jane books the A
+Joe has: 10c 7h 9s 2c 6s
+Jane has: Js 4c 3s 6d 7c
+Jane asks - do you have a 6?
+Joe says - yes, here you go!
+Jane books the 6
+Joe has: 10c 7h 9s 2c
+Jane has: Js 4c 3s 7c
+Jane asks - do you have a 4?
+Joe says - nope. Go Fish!
+Joe has: 10c 7h 9s 2c
+Jane has: Js 4c 3s 7c 10d
+Joe asks - do you have a 10?
+Jane says - yes, here you go!
+Joe books the 10
+Joe has: 7h 9s 2c
+Jane has: Js 4c 3s 7c
+Joe asks - do you have a 2?
+Jane says - nope. Go Fish!
+Joe books the 9
+Joe has: 7h 2c
+Jane has: Js 4c 3s 7c
+Joe asks - do you have a 7?
+Jane says - yes, here you go!
+Joe books the 7
+Joe has: 2c
+Jane has: Js 4c 3s
+Joe asks - do you have a 2?
+Jane says - nope. Go Fish!
+Jane asks - do you have a 3?
+Joe says - nope. Go Fish!
+Jane books the 4
+Joe has: 2c 8s
+Jane has: Js 3s
+Jane asks - do you have a J?
+Joe says - nope. Go Fish!
+Joe has: 2c 8s
+Jane has: Js 3s 2h
+Joe asks - do you have a 2?
+Jane says - yes, here you go!
+Joe books the 2
+Joe has: 8s
+Jane has: Js 3s
+Joe asks - do you have a 8?
+Jane says - nope. Go Fish!
+Jane asks - do you have a J?
+Joe says - yes, here you go!
+Jane books the J
+Joe has: 8s
+Jane has: 3s
+Jane asks - do you have a 3?
+Joe says - nope. Go Fish!
+Joe has: 8s
+Jane has: 3s 8h
+Joe asks - do you have a 8?
+Jane says - yes, here you go!
+Joe books the 8
+Joe has:
+Jane has: 3s
+Joe asks - do you have a 3?
+Jane says - yes, here you go!
+Joe books the 3
+Joe has  Qd Qc 9h 9c 5h 5s Kd Kc Jd Jh 5d 5c 6c 6h Kh Ks 10c 10d 9d 9s 7h 7c 2c 2h 8s 8h 3c 3s
+Jane has  10h 10s 4d 4s 7s 7d 2s 2d 3d 3h Ad Ah 8c 8d Qs Qh As Ac 6d 6s 4h 4c Js Jc
+Joe is the winner!
